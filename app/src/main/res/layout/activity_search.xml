@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivitys.PostQuestion">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@id/app_bar"
+            layout="@layout/app_bar"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/app_bar"
+            app:counterEnabled="true"
+            app:counterMaxLength="200">
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/Postbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/app_bar"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:onClick="ClickMe"
+            android:text="@string/Send"
+            android:textColor="#FFFFFF"
+            />
+
+        <EditText
+            android:id="@+id/points"
+            android:hint="Points"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="7"
+            android:singleLine="true"
+            android:layout_above="@+id/body"
+            android:layout_alignRight="@+id/Postbutton"
+            android:layout_alignEnd="@+id/Postbutton"/>
+
+
+        <EditText
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:gravity="top"
+            android:hint="@string/Typequestion"
+            android:inputType="textMultiLine"
+            android:maxLength="200"
+
+            android:layout_below="@+id/postTitle"
+            android:layout_alignRight="@+id/Postbutton"
+            android:layout_alignEnd="@+id/Postbutton"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:hint="Title"
+            android:id="@+id/postTitle"
+            android:layout_below="@id/app_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/points"
+            android:layout_toLeftOf="@+id/points"/>
+        <AutoCompleteTextView
+            android:background="#E4E4E4"
+            android:id="@+id/courseCodes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Type in Your Text Here"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/body"
+            android:layout_alignBottom="@+id/view" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

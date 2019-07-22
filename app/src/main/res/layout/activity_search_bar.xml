@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/search_bar_layout"
+    android:layout_height="match_parent"
+    tools:context=".NavigationDrawer.SearchBarActivity">
+    <include layout="@layout/app_bar"
+             android:id="@+id/app_bar"/>
+    <Button
+        android:id="@+id/addClass"
+        android:text="Add Class"
+        android:onClick="addCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+<android.support.v7.widget.SearchView
+    android:id="@+id/search_bar"
+        android:layout_below="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/search_bar"
+        android:id="@+id/search_bar_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:id="@+id/defaultText"
+        android:text="Please Add A Course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"/>
+
+</RelativeLayout>
+
+

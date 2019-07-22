@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/logoInteriorGreen"
+    tools:context="com.athena.athena.MainActivitys.Welcome.WelcomeFragments.StudentRun">
+
+    <ImageView
+        android:src="@drawable/threestudents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="40dp"
+       />
+    <TextView
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:text="Student Run"
+        android:layout_width="265dp"
+        android:gravity="center"
+        android:id="@+id/studentRunText"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:text="No Instructors. Only Students."
+        android:layout_width="265dp"
+        android:gravity="center"
+        android:id="@+id/studentRunSubHeader"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110dp" />
+</RelativeLayout>

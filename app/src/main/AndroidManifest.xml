@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.athena.athena">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".Network.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_white"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivitys.LoginActivitys.Login"
+            android:label="afterclass"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+
+            android:name=".MainActivitys.ViewPager.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MainActivitys.PostQuestion"
+            android:label="Compose"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivitys.ViewPager.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivitys.QuestionActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_question"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivitys.ViewPager.MainActivity" />
+        </activity>
+        <activity android:name=".NavigationDrawer.Settings"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".NavigationDrawer.SearchBarActivity"
+            android:label="@string/title_activity_search_bar"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivitys.ViewPager.MainActivity" />
+        </activity>
+        <activity
+            android:name=".NavigationDrawer.myQuestions"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_student_question"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".NavigationDrawer.myAnswers"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_student_answer"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".NavigationDrawer.PaymentStore"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_payment_store"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainActivitys.LoginActivitys.Register"
+            android:label="Sign Up"
+
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivitys.Welcome.WelcomeSlides"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".NavigationDrawer.AddCourse"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".NavigationDrawer.changeProfile" />
+    </application>
+
+</manifest>

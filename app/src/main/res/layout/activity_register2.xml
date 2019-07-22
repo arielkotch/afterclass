@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivitys.LoginActivitys.Register">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+    <Button
+        android:text="Sign Up"
+        android:id="@+id/createUser"
+        android:onClick="createUser"
+        android:textColor="#FFFFFF"
+        android:background="@color/primaryColor"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordConfirm"
+        android:layout_alignLeft="@+id/passwordConfirm"
+        android:layout_alignStart="@+id/passwordConfirm" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:hint="UMDEmail"
+        app:met_floatingLabel="highlight"
+        android:id="@+id/email"
+        android:singleLine="true"
+        android:maxLength="40"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userNameCreate"
+        android:layout_alignLeft="@+id/passwordCreate"
+        android:layout_alignStart="@+id/passwordCreate" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:hint="Username"
+        app:met_floatingLabel="highlight"
+        android:layout_marginTop="30dp"
+        android:id="@+id/userNameCreate"
+        android:singleLine="true"
+        android:maxLength="20"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:hint="Password"
+        android:singleLine="true"
+        android:maxLength="20"
+        app:met_floatingLabel="highlight"
+        android:id="@+id/passwordCreate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_alignLeft="@+id/passwordConfirm"
+        android:layout_alignStart="@+id/passwordConfirm" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:hint="Confirm Password"
+        android:singleLine="true"
+        app:met_floatingLabel="highlight"
+        android:maxLength="20"
+        android:id="@+id/passwordConfirm"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordCreate"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

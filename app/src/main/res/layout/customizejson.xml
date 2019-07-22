@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="#f3f3f3"
+                android:paddingBottom="2dp"
+                android:id="@+id/json_layout">
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardviewAnswer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="1.5dp"
+    card_view:cardCornerRadius="0dp"
+    android:onClick="OnClick">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+        <ImageView
+            android:src="@drawable/medical"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/studentImage"
+            android:layout_alignTop="@+id/classCode"
+            android:layout_toRightOf="@+id/StudentId"
+            android:layout_toEndOf="@+id/StudentId" />
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/classCode"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+
+            android:text="Class Code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/studentImage"
+            android:layout_toEndOf="@+id/studentImage"/>
+        <TextView
+            android:id="@+id/imageName"
+            android:text=""
+            android:textSize="1dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    <TextView
+        android:id="@+id/questionText"
+        android:textSize="14sp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_toRightOf="@+id/studentImage"
+
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/dummytext"
+        android:layout_below="@+id/classCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/questionId"
+            android:textSize="5sp"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/StudentId"
+            android:layout_alignParentLeft="true"
+          />
+        <TextView
+            android:id="@+id/TimeCreated"
+            android:paddingLeft="10dp"
+            android:text="@string/TimeCreated"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/questionText"
+            android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/points"
+        android:text="@string/PointsId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:text="@string/StudentIds"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/StudentId"
+            android:textColor="#FFFFFF"
+            android:textSize="5sp"
+            android:layout_below="@+id/TimeCreated"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+        <com.like.LikeButton
+            app:icon_type="heart"
+            app:icon_size="14dp"
+            android:id="@+id/like_button_viewpager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/questionId"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            />
+        <TextView
+            android:text="10"
+            android:layout_alignBottom="@+id/questionId"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="13dp"
+            android:id="@+id/votes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="BSCI105"
+            android:id="@+id/courseId"
+            android:textSize="12dp"
+            android:layout_alignBottom="@+id/TimeCreated"
+            android:layout_alignLeft="@+id/questionText"
+            android:layout_alignStart="@+id/questionText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+        <ImageView
+            android:id="@+id/courseColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="voted"
+            android:textColor="#FFFFFF"
+            android:textSize="1dp"
+            android:id="@+id/studentVoted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/questionId"
+            android:layout_toRightOf="@+id/questionId"
+            android:layout_toEndOf="@+id/questionId" />
+        <TextView
+            android:id="@+id/repliesViewpager"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/questionText"
+            android:layout_toRightOf="@+id/TimeCreated"
+            android:layout_toEndOf="@+id/TimeCreated"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp" />
+        <TextView
+            android:id="@+id/repliesText"
+            android:text="replies"
+            android:paddingLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/TimeCreated"
+            android:layout_toRightOf="@+id/repliesViewpager"
+            android:layout_toEndOf="@+id/repliesViewpager" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+</LinearLayout>
+
+
+
+

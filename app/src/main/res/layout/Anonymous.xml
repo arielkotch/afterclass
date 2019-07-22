@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/logoInteriorGreen"
+
+
+    tools:context=".MainActivitys.Welcome.WelcomeFragments.AnonymousSlide">
+
+
+    <TextView
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:text="Ask Anonymously"
+        android:layout_width="265dp"
+        android:gravity="center"
+        android:id="@+id/headerTextThird"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:src="@drawable/anonymous"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+
+
+        />
+
+    <TextView
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:text="Ask other students comfortably"
+        android:layout_width="265dp"
+        android:gravity="center"
+        android:id="@+id/subHeaderThird"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110dp" />
+
+</RelativeLayout>
